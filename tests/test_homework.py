@@ -13,7 +13,8 @@ def test_01():
     try:
         subprocess.run(
             [
-                "mlflow run https://github.com/jdvelasq/mlflow-wine-quality.git -e knn -P n_neighbors=5"
+                "bash",
+                "run.sh",
             ],
             check=True,
         )
